@@ -19,8 +19,9 @@ def get_japanese_emoticon(path, emotican)
   hash = load_library(path)
   if hash["get_emoticon"][emotican] == nil 
     puts "message"
+  else 
+    hash["get_emoticon"][emotican]
   end 
-  hash["get_emoticon"][emotican]
 end
 
 def get_english_meaning
