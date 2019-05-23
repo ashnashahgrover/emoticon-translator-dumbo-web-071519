@@ -5,9 +5,11 @@ require "yaml"
 def load_library(file_path)
   require "yaml"
   hash = YAML.load_file("#{file_path}")
-  hash.each do |meaning, 
-  new_hash[:get_meaning] = 
-  new_hash[:get_emoticon]
+  new_hash = {}
+  hash.each do |meaning, emoticon|
+    new_hash[:get_meaning] ||= {}
+    new_hash[:get_meaning][emoticon[]]
+    new_hash[:get_emoticon]
 end
 
 def get_japanese_emoticon
