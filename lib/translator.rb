@@ -5,7 +5,7 @@ require "yaml"
 def load_library(file_path)
   require "yaml"
   hash = YAML.load_file("#{file_path}")
-  hash.each do |
+  hash.each do |meaning, 
   new_hash[:get_meaning] = 
   new_hash[:get_emoticon]
 end
