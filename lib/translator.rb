@@ -10,6 +10,7 @@ def load_library(file_path)
     new_hash["get_meaning"] ||= {}
     new_hash["get_emoticon"] ||= {}
     new_hash["get_meaning"][emoticon[1]] = meaning 
+    new_hash["get_emoticon"][emoticon[0]]= meaning 
   end 
   new_hash
 end
